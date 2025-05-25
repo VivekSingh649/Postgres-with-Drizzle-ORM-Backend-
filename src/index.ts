@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 4000;
 
 
 // Middleware
-const allowedOrigins = ['http://localhost:3000', 'https://your-production-url.com'];
+const allowedOrigins = ['http://localhost:5173', 'https://postgres-with-drizzle.netlify.app'];
 app.use(cors({ origin: allowedOrigins }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
