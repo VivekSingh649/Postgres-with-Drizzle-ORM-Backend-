@@ -188,7 +188,7 @@ export const updateUserId = async (
             .update(usersTable)
             .set({
                 ...formData,
-                updatedAt: sql`CURRENT_TIMESTAMP`,
+                updatedAt: Date.now(),
             })
             .where(eq(usersTable.id, id))
             .returning({
